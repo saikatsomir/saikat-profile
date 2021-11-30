@@ -1,7 +1,7 @@
-import logo from './profile.jpg';
 import Home from './pages/Home/Home/Home';
 
 function App() {
+  
   return (
     <div className="App">
      <Home/>

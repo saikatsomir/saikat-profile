@@ -2,16 +2,15 @@ import { Typography } from '@mui/material';
 import React from 'react';
 
 const center = {
-position:" absolute",
-left:" 50%",
-bottom:'-100%',
-transform:" translate(-50%, -0%)",
+margin:'auto', 
+width:'60%'
 }
 
 const Contact = () => {
     return (
         <div style={center} sx={{mt:20}}>
-            <Typography variant="h4" sx={{fontWeight:'bold'}}>
+            <Typography variant="h4" sx={{fontWeight:'bold',my:5}}>
+
                 Contact Me
             </Typography>
             <form method="POST" action="https://formsubmit.co/saikatsomir@gmail.com" enctype="multipart/form-data">
@@ -23,17 +22,17 @@ const Contact = () => {
     <div class="form-group">
       <div class="form-row">
         <div class="col">
-          <input style={{width:'320px', padding:'4px',outline:'0px',margin:"5px" }} sx={{mb:3}} type="text" name="name" class="form-control" placeholder="Full Name" required/>
+          <input style={{width:'350px', padding:'10px',outline:'0px',margin:"5px" }} sx={{mb:3}} type="text" name="name" class="form-control" placeholder="Full Name" required/>
         </div>
         <div class="col">
-          <input style={{width:'320px', padding:'4px',outline:'0px',margin:"5px" }} sx={{mb:3}}type="email" name="email" class="form-control" placeholder="Email Address" required/>
+          <input style={{width:'350px', padding:'10px',outline:'0px',margin:"5px" }} sx={{mb:3}}type="email" name="email" class="form-control" placeholder="Email Address" required/>
         </div>
       </div>
     </div>
     <div class="form-group">
-      <textarea style={{width:'320px', padding:'4px', margin:'5px'}} placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+      <textarea style={{width:'350px', padding:'10px', margin:'5px'}} placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
     </div>
-    <button type="submit" style={{padding:'4px 40px', marginLeft:'90px'}} class="btn btn-lg btn-dark btn-block">Submit Form</button>
+    <button type="submit" style={{padding:'4px 40px', marginLeft:'90px'}} class="btn btn-lg btn-dark btn-block">Submit</button>
 </form>
         </div>
     );
